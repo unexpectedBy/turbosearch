@@ -79,7 +79,7 @@ Quanto o TurboSearch estiver realizando a busca em um subdiretório e você dese
 No exemplo abaixo foram encontrados 1 diretórios que é falso positivo (.htpassword), desta forma desejamos ignorá-lo. Quando o TurboSearch iniciar o scan deste diretório é pressionado CTRL + C sendo exibida a mensagem solicitando o que você deseja fazer, basta pressionar “S” e enter que o TurboSearch continuará o teste no próximo diretório.
 
 ```
- [+] Connection test againt http://api1.webapiexploitation.com.br/api OK! (CODE:404|SIZE:143)
+ [+] Connection test against http://api1.webapiexploitation.com.br/api OK! (CODE:404|SIZE:143)
 
  [+] Scanning url http://api1.webapiexploitation.com.br/api
  [*] Calculated default not found http code for this folder is 404 with content size 154
