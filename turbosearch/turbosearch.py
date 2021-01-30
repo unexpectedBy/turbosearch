@@ -92,7 +92,7 @@ class TurboSearch(object):
                 
                 r = requests.get(Configuration.target, verify=False, timeout=10, headers=headers, proxies=proxy)
 
-                Logger.pl('{+} {W}Connection test againt {C}%s{W} OK! (CODE:%d|SIZE:%d) ' % (Configuration.target, r.status_code, len(r.text)))
+                Logger.pl('{+} {W}Connection test against {C}%s{W} OK! (CODE:%d|SIZE:%d) ' % (Configuration.target, r.status_code, len(r.text)))
 
                 Tools.check_content(r);
 
@@ -117,7 +117,7 @@ class TurboSearch(object):
                     requests.packages.urllib3.disable_warnings()
                     r = requests.get(Configuration.target, verify=False, timeout=10, headers=headers, proxies=proxy)
 
-                    Logger.pl('{+} {W}Connection test againt using report to proxy {C}%s{W} OK! (CODE:%d|SIZE:%d) ' % (Configuration.target, r.status_code, len(r.text)))
+                    Logger.pl('{+} {W}Connection test against using report to proxy {C}%s{W} OK! (CODE:%d|SIZE:%d) ' % (Configuration.target, r.status_code, len(r.text)))
 
                 except Exception as e:
                     Logger.pl('{+} {R}connectivity check error using report to proxy: {O}%s{W}' % e)
